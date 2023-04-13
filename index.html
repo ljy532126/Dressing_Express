@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穿搭速递</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 网页头部 -->
+    <header>
+        <div class="nav-box">
+            <img src="./images/logo.png">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">穿搭速递</a></li>
+                    <li><a href="#">时尚大片</a></li>
+                    <li><a href="#">星着装</a></li>
+                    <li><a href="#">时尚圈</a></li>
+                    <li><a href="#">时尚专栏</a></li>
+                    <li><a href="#">会员/登录</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+    </header>
+    <!-- 主体部分 -->
+    <section class="container">
+        <!-- banner轮播图 -->
+        <div class="banner">
+            <img src="./images/banner.jpg">
+        </div>
+        <!-- 穿搭展示 -->
+        <div class="box">
+            <div id="wrap" class="wrap">
+                <div class="left">
+                    <div class="left-top">
+                        <img src= "./images/pic01.jpg">
+                        <a id="random" href="#">明星风尚</a>
+                    </div>
+                    <div class="left-bottom">
+                        <img src="./images/pic02.jpg">
+                        <a id="random" href="#">时尚博主</a>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="center-top">
+                        <img src="./images/pic03.jpg">
+                        <a id="random" href="#">流行搭配</a>
+                    </div>
+                    <div class="center-bottom">
+                        <img src="./images/pic04.jpg">
+                        <a id="random" href="#">精选秀场</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-top">
+                        <a href="#">环球街拍</a>
+                        <img src="./images/pic05.jpg">
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+        <!-- 潮流前沿 -->
+        <div class="current">
+            <figure class="current-card clearfix">
+                <figcaption>潮流前沿/Tidal current</figcaption>
+                <ul>
+                    <li>
+                        <img src="./images/match01.jpg">
+                        <p>潮流饰品</p>
+                        <a id="a" href="#">
+                            <div class="current-list">
+                                <img src="./images/gouwu.jpg">
+                                <span onclick="run()">快速购买通道</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./images/match02.jpg">
+                        <p>时尚女鞋</p>
+                        <a href="#">
+                            <div class="current-list">
+                                <img src="./images/gouwu.jpg">
+                                <span>快速购买通道</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./images/match03.jpg">
+                        <p>精品包包</p>
+                        <a href="#">
+                            <div class="current-list">
+                                <img src="./images/gouwu.jpg">
+                                <span>快速购买通道</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./images/match04.jpg">
+                        <p>百搭衣帽</p>
+                        <a href="#">
+                            <div class="current-list">
+                                <img src="./images/gouwu.jpg">
+                                <span>快速购买通道</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </figure>
+        </div>
+    </section>
+    <!-- 页脚部分 -->
+    <footer>
+        <p>Copyright&#169;2006-2016CHAOLIUFUSHIcom,All rights reserved.</p>
+        <p>2001-2018,版权所有 潮流服饰 ICP备3364224962</p>
+    </footer>
+</body>
+<script>
+    function randomNumber(){
+        a = Math.floor(Math.random()*10);
+        b = Math.floor(Math.random()*10);
+        c = Math.floor(Math.random()*10);
+        d = Math.floor(Math.random()*10);
+        e = Math.floor(Math.random()*10);
+        f = Math.floor(Math.random()*10);
+        backgroundColor = "#"+a+b+c+d+e+f;
+        return backgroundColor;
+    }
+    var intervalId;
+    var isRunning = false;
+    function run(){
+        if(isRunning){
+            clearInterval(intervalId);
+            console.log("定时器停止")
+        }else{
+            intervalId = setInterval(function(){
+                var name = document.body.style.display = "none";
+                
+            },2000)
+            console.log("定时器启动")
+        }
+    }
+    isRunning = isRunning;
+    var myDiv =document.getElementById("a").setAttribute("title","点击我后三秒清除页面")
+</script>
+</html>

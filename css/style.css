@@ -1,0 +1,209 @@
+/* 清除默认样式 */
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+body{
+    transition: ease-in 3s;
+}
+a{
+    /* 去除下划线 */
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* 版心 */
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+/* 导航栏 */
+.nav {
+    /* border: 1px solid red; */
+    
+}
+.nav-box{
+    width: 980px;
+    margin: 0 auto;
+}
+.nav ul{
+    width: 800px;
+    margin: 0 auto;
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    width: 114px;
+    font-size: 20px;
+    text-align: center;
+    height: 91px;
+    line-height: 91px;
+}
+.nav ul li a{
+    height: 91px;
+    color: white;
+}
+header li:hover{
+    background: url(../images/xuanfu.png);
+}
+header{
+    min-width: 980px;
+    height: 128px;
+    background: url(../images/head_bg.jpg);
+}
+header img{
+    float: left;
+}
+.box-nav{
+    margin: 0 auto;
+}
+/* 主体部分 */
+.wrap{
+    height: 335px;
+    width: 935px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px 12px;
+}
+.box{
+    height: 345px;
+    padding: 10px 25px;
+    background-color: rgb(226, 75, 15);
+    
+}
+.left{
+    float: left;
+}
+.left-top{
+    /* float: left; */
+}
+.left-top a{
+    float: right;
+    height: 169px;
+    color: white;
+    line-height: 169px;
+    background: #333;
+    text-align: center;
+    width: 117px;
+}
+.left-bottom a,.center-top a,.center-bottom a,.right-top a{
+    float: right;
+    color: white;
+    background: #333;
+    text-align: center;
+    width: 117px;
+    line-height: 138px;
+    height: 138px;
+}
+.center{
+    float: left;
+}
+.center-top a{
+    height: 117px;
+    line-height: 117px;
+    width: 117px;
+}
+.center-bottom a{
+    height: 188px;
+    line-height: 188px;
+    width: 117px;
+}
+.right-top a{
+    height: 314px;
+    color: white;
+    line-height: 314px;
+    width: 135px;
+}
+/* 三个大盒子的外边距 */
+.left,.center,.right{
+    margin-left: 4px;
+}
+.right-top img{
+    float: right;
+}
+.center-bottom,.left-bottom{
+    padding-top: 5px;
+}
+/* 潮流前沿标题*/
+figcaption{
+    background-color: #e45212db;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 70px;
+    width: 240px;
+    font-size: 20px;
+    height: 45px;
+    transition: ease 1s;
+}
+figcaption:hover{
+    border-radius: 25px;
+}
+.current-card ul{
+    width: 980px;
+    box-sizing: border-box;
+    border: 1px solid #d5ccbe;
+    height: 370px;
+    padding: 20px 10px 10px 10px;
+}
+.current-card ul li{
+    margin-left: 7px;
+    border: 1px solid #cfcd55;
+    float: left;
+}
+.current-card ul li p{
+    height: 60px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 60px;
+    color: #887d7d;
+    border-top: 1px solid #ece3cc;
+}
+.current-card ul li span{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    transition: ease-in 0.3s;
+}
+.current-card ul li span:hover{
+    background-color: #d75d3b;
+}
+/* 清除浮动 */
+.clearfix::after{
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    visibility: hidden;
+}
+div .current-list{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f27c3aed;
+    width: 200px;
+    color: #fff;
+    margin: 10px auto;
+    display: flex;
+}
+.wrap a{
+    transition:ease 0.5s ;
+}
+.wrap a:hover{
+    background-color: #f27c3aed;
+}
+footer{
+    min-width: 980px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #000000d6;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+    font-size: 13px;
+}
